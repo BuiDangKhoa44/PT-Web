@@ -154,6 +154,7 @@ function SettingsView({ initial }) {
     <div className="c-muted" style={{ marginTop: 6 }}>Hệ thống sẽ dùng thông tin trên để tạo QR Code động tương ứng với số tiền từng phòng khi phát hành phiếu báo tiền.</div>
   </div>
 </div>
+</div>
 
       <div className="card">
         <div className="card-title"><span className="btn btn-sm" style={{ padding: 6 }}><CalendarDays size={14} /></span> Đơn Giá Mặc Định & Chu Kỳ</div>
