@@ -94,8 +94,8 @@ export default function Invoices() {
                         <div className="total"><span>TỔNG CỘNG PHIẾU:<br /><small className="c-muted">Đã bao gồm VAT & Dịch vụ</small></span><big>{vnd(selected.total)} đ</big></div>
                       </div>
                       <div style={{ display: 'flex', gap: 10, alignItems: 'center', background: 'var(--panel-2)', borderRadius: 10, padding: 10, fontSize: 11 }}>
-                        <div className="qr"><QrCode size={22} /></div>
-                        <div><b>Vietcombank • QuickPay</b><div className="c-muted">STK: 0071001239871</div><div>Nội dung: <b className="c-green">{selected.code.replace(/-/g, '')} {selected.roomCode.replace('.', '')}</b></div></div>
+                        <img src="/qr-zalopay.png" alt="QR ZaloPay" style={{ width: 64, height: 64, borderRadius: 6, background: '#fff', flexShrink: 0 }} />
+                        <div><b>ZaloPay • BUI DANG KHOA</b><div className="c-muted">SĐT/STK: 0345209492</div><div>Nội dung: <b className="c-green">{selected.code.replace(/-/g, '')} {selected.roomCode.replace('.', '')}</b></div></div>
                       </div>
                       <div className="panel-btns">
                         <button className="btn" onClick={() => window.print()}><Printer size={13} /> In Phiếu Thu</button>

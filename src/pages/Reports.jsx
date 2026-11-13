@@ -23,8 +23,8 @@ export default function Reports() {
       <div className="footer-card">
         <GraduationCap size={22} className="c-muted" />
         <div style={{ flex: 1, minWidth: 200 }}><div className="eyebrow c-muted" style={{ color: 'var(--muted)' }}>Đồ án tốt nghiệp chuyên ngành CNTT</div><b>Hệ Thống Số Hóa Quản Lý Nhà Trọ Đa Phòng (TroManager Pro)</b><div className="c-muted" style={{ fontSize: 11 }}>Kiến trúc: Dark Architecture Dashboard • React + Vite • NestJS API</div></div>
-        <div className="col"><span>SINH VIÊN THỰC HIỆN</span><b>Nguyễn Văn Đạt (MSSV: 202160412)</b>Lớp: KTPM K2021A</div>
-        <div className="col"><span>GIẢNG VIÊN HƯỚNG DẪN</span><b>TS. Hoàng Minh Trí</b>Khoa Công Nghệ Thông Tin</div>
+        <div className="col"><span>SINH VIÊN THỰC HIỆN</span><b>Bùi Đăng Khoa (MSSV: 2613042003)</b><b>Ngô Quốc Đại (MSSV: 2613042002)</b></div>
+        <div className="col"><span>GIẢNG VIÊN HƯỚNG DẪN</span><b>Lê Hữu Phú</b><b>Sơn Hà</b></div>
       </div>
     </>
   );
@@ -145,7 +145,7 @@ function SettingsView({ initial }) {
           <div className="field"><label>Số Điện Thoại Trực Tiếp</label><div className="input-wrap"><input value={s.ownerPhone} onChange={set('ownerPhone')} /></div></div>
         </div>
         <div className="task" style={{ alignItems: 'flex-start', gap: 14, padding: 14 }}>
-          <div className="qr" style={{ width: 84, height: 84 }}><QrCode size={46} /></div>
+          <img src="/qr-zalopay.png" alt="QR ZaloPay 0345209492" style={{ width: 120, height: 120, borderRadius: 8, background: '#fff', flexShrink: 0 }} />
           <div style={{ fontSize: 11 }}>
             <div className="c-muted" style={{ fontSize: 10, letterSpacing: '.05em' }}>TÀI KHOẢN THỤ HƯỞNG TIỀN THU TRỌ</div>
             <div className="c-green" style={{ fontWeight: 700, margin: '4px 0' }}>{s.bankName}</div>

@@ -4,7 +4,7 @@
 export const mockUser = { id: 1, fullName: 'Quản trị viên', username: 'admin', role: 'ADMIN' };
 
 export const mockDashboard = {
-  branchName: 'Dãy trọ An Bình - 12 Phòng',
+  branchName: 'Dãy trọ Tình Yêu - 12 Phòng',
   period: '2024-10',
   totalRooms: 24, rentedRooms: 18, vacantRooms: 4, maintenanceRooms: 2,
   expectedRevenue: 68500000, collected: 48000000, outstanding: 20500000,
@@ -101,7 +101,7 @@ export const mockSettings = {
   facilityName: 'Ký túc xá / Nhà trọ An Bình',
   address: 'Số 128/4 Đỗ Xuân Hợp, Phường Phước Long B, TP. Thủ Đức, TP.HCM',
   ownerName: 'Trần Quốc Bảo', ownerPhone: '0908 123 456',
-  bankName: 'MB Bank (Ngân hàng Quân Đội)', bankAccount: '0388 999 888 777', bankHolder: 'TRAN QUOC BAO',
+ bankName: 'ZaloPay (Ví điện tử)', bankAccount: '0345209492', bankHolder: 'BUI DANG KHOA',
   electricPrice: 3500, waterPrice: 18000, servicePrice: 50000,
   meterCloseDay: 25, rentDueFrom: 1, rentDueTo: 5,
 };
