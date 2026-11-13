@@ -100,7 +100,7 @@ export const mockReport = {
 export const mockSettings = {
   facilityName: 'Ký túc xá / Nhà trọ An Bình',
   address: 'Số 128/4 Đỗ Xuân Hợp, Phường Phước Long B, TP. Thủ Đức, TP.HCM',
-  ownerName: 'Trần Quốc Bảo', ownerPhone: '0908 123 456',
+  ownerName: 'Bùi Đăng Khoa', ownerPhone: '0345209492',
  bankName: 'ZaloPay (Ví điện tử)', bankAccount: '0345209492', bankHolder: 'BUI DANG KHOA',
   electricPrice: 3500, waterPrice: 18000, servicePrice: 50000,
   meterCloseDay: 25, rentDueFrom: 1, rentDueTo: 5,
