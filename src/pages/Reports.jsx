@@ -145,15 +145,15 @@ function SettingsView({ initial }) {
           <div className="field"><label>Số Điện Thoại Trực Tiếp</label><div className="input-wrap"><input value={s.ownerPhone} onChange={set('ownerPhone')} /></div></div>
         </div>
         <div className="task" style={{ alignItems: 'flex-start', gap: 14, padding: 14 }}>
-          <img src="/qr-zalopay.png" alt="QR ZaloPay 0345209492" style={{ width: 120, height: 120, borderRadius: 8, background: '#fff', flexShrink: 0 }} />
-          <div style={{ fontSize: 11 }}>
-            <div className="c-muted" style={{ fontSize: 10, letterSpacing: '.05em' }}>TÀI KHOẢN THỤ HƯỞNG TIỀN THU TRỌ</div>
-            <div className="c-green" style={{ fontWeight: 700, margin: '4px 0' }}>{s.bankName}</div>
-            <div style={{ fontWeight: 700, fontSize: 14 }}>{s.bankAccount}</div><div>Chủ TK: {s.bankHolder}</div>
-            <div className="c-muted" style={{ marginTop: 6 }}>Hệ thống sẽ dùng thông tin trên để tạo QR Code động tương ứng với số tiền từng phòng khi phát hành phiếu báo tiền.</div>
-          </div>
-        </div>
-      </div>
+  <img src="/qr-zalopay.png" alt="QR ZaloPay 0345209492" style={{ width: 120, height: 120, borderRadius: 8, background: '#fff', flexShrink: 0 }} />
+  <div style={{ fontSize: 11, flex: 1, minWidth: 0 }}>
+    <div className="c-muted" style={{ fontSize: 10, letterSpacing: '.05em', marginBottom: 8 }}>TÀI KHOẢN THỤ HƯỞNG TIỀN THU TRỌ</div>
+    <div className="field"><label>Ngân Hàng / Ví</label><div className="input-wrap"><input value={s.bankName || ''} onChange={set('bankName')} /></div></div>
+    <div className="field"><label>Số Tài Khoản / SĐT</label><div className="input-wrap"><input value={s.bankAccount || ''} onChange={set('bankAccount')} /></div></div>
+    <div className="field"><label>Chủ Tài Khoản</label><div className="input-wrap"><input value={s.bankHolder || ''} onChange={set('bankHolder')} /></div></div>
+    <div className="c-muted" style={{ marginTop: 6 }}>Hệ thống sẽ dùng thông tin trên để tạo QR Code động tương ứng với số tiền từng phòng khi phát hành phiếu báo tiền.</div>
+  </div>
+</div>
 
       <div className="card">
         <div className="card-title"><span className="btn btn-sm" style={{ padding: 6 }}><CalendarDays size={14} /></span> Đơn Giá Mặc Định & Chu Kỳ</div>
